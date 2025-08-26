@@ -12,9 +12,9 @@ background: #D9D9D9;
 .rec{
 position: relative;
 width: 1080px;
-height: 540px;
+height: 240px;
 left: 420px;
-top: 540px;
+top: 1020px;
 display: flex;
 background: #A65A5A;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -22,6 +22,7 @@ border-radius: 24px 24px 0px 0px;
 transition: top 0.5s ease;
 justify-content: space-between;
 }
+
 #hour{
 position: absolute;
 width: 256px;
@@ -38,9 +39,10 @@ color: #000000;
 #clrbutton{
 position: absolute;
 width: 72px;
-height: 68px;
+height: 72px;
 left: 42px;
 top: 32px;
+cursor: pointer;
 transition: background 0.3s ease, color 0.3s ease;
 background: #252323;
 }
@@ -111,5 +113,18 @@ background: #A4C8EA;
 border-radius: 24px;
 }
 
+#musicbutton{
+position: absolute;
+width: 72px;
+height: 72px;
+left: 1801px;
+top: 975px;
+cursor: pointer;
+background: #AC2323;
+transition: background 0.3s ease;
+}
 
+#musicbutton.active{
+    background: #339F2D
+}
 
