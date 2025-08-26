@@ -1,5 +1,7 @@
 const element = document.querySelector('.rec') //rectangle
 const button = document.querySelector('.button')
+const frame = document.querySelector('.frame')
+const clrbutton = document.getElementById("clrbutton")
 let isDown = false //bool to check
 button.addEventListener('click', () => { //function
     //gets current top position
@@ -12,6 +14,9 @@ button.addEventListener('click', () => { //function
         isDown = false;
     }
 });
+clrbutton.addEventListener("click", () => {
+    frame.classList.toggle("dark");
+})
 
 function updateHour(){
     const now = new Date();

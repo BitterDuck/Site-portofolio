@@ -8,6 +8,7 @@ height: 100vh;
 
 background: #D9D9D9;
 }
+
 .rec{
 position: relative;
 width: 1080px;
@@ -33,6 +34,26 @@ font-weight: 400;
 font-size: 96px;
 line-height: 116px;
 color: #000000;
+}
+#clrbutton{
+position: absolute;
+width: 72px;
+height: 68px;
+left: 42px;
+top: 32px;
+transition: background 0.3s ease, color 0.3s ease;
+background: #252323;
+}
+
+.frame.dark{
+    background: #252323;
+}
+.frame.dark #clrbutton{
+    background: #D9D9D9;
+    color: black;
+}
+.frame.dark #hour{
+    color: white;
 }
 .button{
 position: absolute;
